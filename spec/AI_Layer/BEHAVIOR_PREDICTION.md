@@ -1,0 +1,4 @@
+## Predict
+
+- Likely actions
+- Motivations
