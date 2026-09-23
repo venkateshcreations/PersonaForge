@@ -48,7 +48,7 @@ export const Layout = () => {
                 <img
                   src={`${import.meta.env.BASE_URL}logo.png`}
                   alt="PersonaForge"
-                  className="h-9 w-auto"
+                  className="h-16 w-auto"
                   style={theme === 'dark' ? { background: 'rgba(255,255,255,0.92)', borderRadius: '10px', padding: '2px 10px' } : undefined}
                 />
               </h1>
