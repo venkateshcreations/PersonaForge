@@ -1,4 +1,4 @@
-import { BrowserRouter, Routes, Route } from 'react-router-dom';
+import { HashRouter, Routes, Route } from 'react-router-dom';
 import { Layout } from './components/Layout';
 import { Dashboard } from './modules/Dashboard';
 import { PersonaBuilder } from './modules/PersonaBuilder';
@@ -11,7 +11,7 @@ import { Analytics } from './modules/Analytics';
 
 function App() {
   return (
-    <BrowserRouter>
+    <HashRouter>
       <Routes>
         <Route path="/" element={<Layout />}>
           <Route index element={<Dashboard />} />
@@ -24,7 +24,7 @@ function App() {
         <Route path="/shared/:id" element={<SharedPersonaView />} />
         <Route path="/present/:id" element={<PresentationMode />} />
       </Routes>
-    </BrowserRouter>
+    </HashRouter>
   );
 }
 

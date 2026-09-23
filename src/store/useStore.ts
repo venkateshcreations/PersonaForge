@@ -91,7 +91,7 @@ export const useStore = create<Store>()(
       addToTeam: (persona) => set((state) => ({ teamLibrary: [...state.teamLibrary, persona] })),
       removeFromTeam: (id) => set((state) => ({ teamLibrary: state.teamLibrary.filter((p) => p.id !== id) })),
 
-      getShareableLink: (id) => { const baseUrl = window.location.origin; return `${baseUrl}/shared/${id}`; },
+      getShareableLink: (id) => { const baseUrl = `${window.location.origin}${window.location.pathname}`; return `${baseUrl}#/shared/${id}`; },
 
       revertToVersion: (id, version) => set((state) => ({
         personas: state.personas.map((p) => {
