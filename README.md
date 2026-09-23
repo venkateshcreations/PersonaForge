@@ -1,5 +1,5 @@
 <div align="center">
-  <img src="public/logo.svg" width="120" alt="PersonaForge">
+  <img src="public/logo.png" width="200" alt="PersonaForge">
   <h1>PersonaForge</h1>
   
   <!-- Primary Badges -->

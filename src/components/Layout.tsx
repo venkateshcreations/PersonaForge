@@ -45,10 +45,12 @@ export const Layout = () => {
                 onClick={() => navigate('/')}
                 className="cursor-pointer flex items-center"
               >
-                <span className="font-bold" style={{ fontFamily: 'var(--font-display)', fontSize: '28px' }}>
-                  <span className="text-[var(--accent)]">Persona</span>
-                  <span style={{ color: 'var(--text)' }}>Forge</span>
-                </span>
+                <img
+                  src={`${import.meta.env.BASE_URL}logo.png`}
+                  alt="PersonaForge"
+                  className="h-9 w-auto"
+                  style={theme === 'dark' ? { background: 'rgba(255,255,255,0.92)', borderRadius: '10px', padding: '2px 10px' } : undefined}
+                />
               </h1>
             </div>
             <div className="flex items-center gap-6">
